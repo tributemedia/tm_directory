@@ -3,4 +3,4 @@ Provides Directory Entry content type and related configuration. Directory Entri
 
 ## Installation
 
-$ composer require tributemedia/tm_directory: ^1.0-beta1
+$ composer require tributemedia/tm_directory: ^1.0
