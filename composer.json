@@ -1,0 +1,18 @@
+{
+  "name": "tributemedia/tm_directory",
+  "description": "Provides entity types and configuration for the Member Directory feature.",
+  "type": "drupal-module",
+  "license": "GPL-3.0-or-later",
+  "autoload": {
+    "psr-4": {
+      "Tributemedia\\TMDirectory\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "skenley",
+      "email": "steve.kenley@gmail.com"
+    }
+  ],
+  "require": {}
+}
