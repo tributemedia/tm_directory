@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: directory_entries
+label: 'Directory Entries'
+type: 'canonical_entities:node'
+pattern: 'directory/[node:title]'
+selection_criteria:
+  c8c0afac-f09b-40a0-9b81-dcfda3bdfabb:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: c8c0afac-f09b-40a0-9b81-dcfda3bdfabb
+    context_mapping:
+      node: node
+    bundles:
+      directory_entry: directory_entry
+selection_logic: and
+weight: -5
+relationships: {  }

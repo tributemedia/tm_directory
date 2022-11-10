@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dir_email_address
+    - node.type.directory_entry
+_core:
+  default_config_hash: TA74T7Z85vA29B9M76LyZFgRJ5Tf8JGj_vNe0GVU3x0
+id: node.directory_entry.field_dir_email_address
+field_name: field_dir_email_address
+entity_type: node
+bundle: directory_entry
+label: 'Email Address'
+description: 'This email address will be used in the contact form for sending messages to this person.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

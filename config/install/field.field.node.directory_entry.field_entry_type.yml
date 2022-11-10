@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_entry_type
+    - node.type.directory_entry
+    - taxonomy.vocabulary.directory_entry_type
+id: node.directory_entry.field_entry_type
+field_name: field_entry_type
+entity_type: node
+bundle: directory_entry
+label: 'Entry Type'
+description: 'Select from the list of entry types to categorize this entry. To add a new entry type, click <a href="/admin/structure/taxonomy/manage/directory_entry_type/add?destination=[current-page:url:path]">here</a>.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      directory_entry_type: directory_entry_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

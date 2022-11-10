@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Directory Entry Type'
+vid: directory_entry_type
+description: 'Categories used to categorize directory entries.'
+weight: 0

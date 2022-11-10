@@ -1,0 +1,4 @@
+tm-directory:
+  css:
+    theme:
+      css/directory.css: {}

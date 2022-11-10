@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dir_social_media
+    - node.type.directory_entry
+    - paragraphs.paragraphs_type.social_links_section
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: 62qRNT6G-Vl0n_y_BDh3pq37bIQW2uOrQrJJsc7E-NM
+id: node.directory_entry.field_dir_social_media
+field_name: field_dir_social_media
+entity_type: node
+bundle: directory_entry
+label: 'Social Media'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      social_links_section: social_links_section
+    negate: 0
+    target_bundles_drag_drop:
+      card_section:
+        weight: 7
+        enabled: false
+      definition_section:
+        weight: 8
+        enabled: false
+      magic_accordion_elements:
+        weight: 9
+        enabled: false
+      pillar_navigation_section:
+        weight: 10
+        enabled: false
+      social_links_section:
+        weight: 11
+        enabled: true
+      social_sharing:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

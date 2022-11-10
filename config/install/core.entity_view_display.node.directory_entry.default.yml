@@ -1,0 +1,133 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.directory_entry.body
+    - field.field.node.directory_entry.field_dir_credentials
+    - field.field.node.directory_entry.field_dir_email_address
+    - field.field.node.directory_entry.field_dir_phone
+    - field.field.node.directory_entry.field_dir_picture
+    - field.field.node.directory_entry.field_dir_professional_title
+    - field.field.node.directory_entry.field_dir_social_media
+    - field.field.node.directory_entry.field_entry_type
+    - image.style.employee_photo
+    - node.type.directory_entry
+  module:
+    - entity_reference_revisions
+    - field_formatter_class
+    - field_group
+    - svg_image
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_left_column:
+      children:
+        - field_dir_picture
+        - field_dir_social_media
+      label: 'Left Column'
+      parent_name: ''
+      region: content
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: left-column
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_right_column:
+      children:
+        - field_dir_credentials
+        - body
+      label: 'Right Column'
+      parent_name: ''
+      region: content
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: right-column
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.directory_entry.default
+targetEntityType: node
+bundle: directory_entry
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_dir_credentials:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_dir_phone:
+    type: string
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_dir_picture:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: employee_photo
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 3
+    region: content
+  field_dir_professional_title:
+    type: string
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_dir_social_media:
+    type: entity_reference_revisions_entity_view
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+hidden:
+  field_dir_email_address: true
+  field_entry_type: true

@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: employee_photo
+label: 'Employee Photo'
+effects:
+  1269f5b4-7053-4955-af26-730722d8649e:
+    uuid: 1269f5b4-7053-4955-af26-730722d8649e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 490
+      height: 637
+      anchor: center-center

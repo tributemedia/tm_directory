@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.directory_entry.body
+    - field.field.node.directory_entry.field_dir_credentials
+    - field.field.node.directory_entry.field_dir_email_address
+    - field.field.node.directory_entry.field_dir_phone
+    - field.field.node.directory_entry.field_dir_picture
+    - field.field.node.directory_entry.field_dir_professional_title
+    - field.field.node.directory_entry.field_dir_social_media
+    - field.field.node.directory_entry.field_entry_type
+    - node.type.directory_entry
+  module:
+    - text
+    - user
+id: node.directory_entry.teaser
+targetEntityType: node
+bundle: directory_entry
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_dir_credentials: true
+  field_dir_email_address: true
+  field_dir_phone: true
+  field_dir_picture: true
+  field_dir_professional_title: true
+  field_dir_social_media: true
+  field_entry_type: true

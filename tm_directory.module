@@ -1,0 +1,23 @@
+<?php
+
+use Drupal\views\ViewExecutable;
+
+/**
+* Implements hook_views_pre_render().
+*/
+function tm_directory_views_pre_render(ViewExecutable $view) {
+  if (isset($view) && ($view->storage->id() == 'directory')) {
+    $view->element['#attached']['library'][] = 'tm_directory/tm-directory';
+  }
+}
+
+/**
+ * Implements hook_preprocess_node().
+*/
+
+function tm_directory_preprocess_node(&$variables) {
+  $node = $variables['node'];
+  if ($node->getType() == 'directory_entry') {
+    $variables['#attached']['library'][] = 'tm_directory/tm-directory';
+  }
+}

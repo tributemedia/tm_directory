@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: directory_listing
+label: 'Directory Listing'
+effects:
+  7fcd0095-1cb0-402b-a064-0d8d95f8ca50:
+    uuid: 7fcd0095-1cb0-402b-a064-0d8d95f8ca50
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 600
+      anchor: center-center

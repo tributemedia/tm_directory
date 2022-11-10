@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dir_professional_title
+    - node.type.directory_entry
+_core:
+  default_config_hash: r9xTbDSp_GUTABzJXT_d6WZ_8v9f9Psk9mAmOH4OUvw
+id: node.directory_entry.field_dir_professional_title
+field_name: field_dir_professional_title
+entity_type: node
+bundle: directory_entry
+label: 'Professional Title'
+description: 'This is the title of the position this member/employee holds. President, Vice President, CEO, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+excluded:
+  - simple_sitemap.bundle_settings.default.node.directory_entry
+  - core.base_field_override.node.directory_entry.promote
+  - core.base_field_override.node.directory_entry.title
+  - node.type.directory_entry
+  - field.field.node.directory_entry.body
+  - field.field.node.directory_entry.field_dir_credentials
+  - field.field.node.directory_entry.field_dir_email_address
+  - field.field.node.directory_entry.field_dir_phone
+  - field.field.node.directory_entry.field_dir_picture
+  - field.field.node.directory_entry.field_dir_professional_title
+  - field.field.node.directory_entry.field_dir_social_media
+  - field.storage.node.field_dir_credentials
+  - field.storage.node.field_dir_email_address
+  - field.storage.node.field_dir_phone
+  - field.storage.node.field_dir_picture
+  - field.storage.node.field_dir_professional_title
+  - field.storage.node.field_dir_social_media
+  - field.storage.node.field_entry_type
+  - paragraphs.paragraphs_type.social_links_section
+required: true
