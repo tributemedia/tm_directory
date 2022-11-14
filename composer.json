@@ -1,0 +1,18 @@
+{
+    "name": "tributemedia/tm_directory",
+    "description": "Provides Directory Entry content type and related configuration. Directory Entries are used to add new people to your directory. A new Directory Entry will be automatically added to your directory page and sorted based on your site's configuration.",
+    "type": "drupal-module",
+    "license": "GPL-3.0-or-higher",
+    "autoload": {
+        "psr-4": {
+            "Tributemedia\\TmDirectory\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "skenley",
+            "email": "steve.kenley@gmail.com"
+        }
+    ],
+    "require": {}
+}
