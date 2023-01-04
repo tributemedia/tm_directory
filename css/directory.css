@@ -154,6 +154,11 @@ div.bio-link::before {
   transition: all 0.2s ease-in-out;
 }
 
+.field-dir-social-media {
+	display:inline-block;
+	margin-bottom:10px;
+}
+
 /* ======================= */
 /* = Directory Node View = */
 /* ======================= */

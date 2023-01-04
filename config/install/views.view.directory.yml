@@ -280,7 +280,7 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: true
+            make_link: false
             path: '{{ view_node_2 }}?mail_to={{ field_dir_email_address }}'
             absolute: false
             external: false
@@ -319,7 +319,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: false
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -467,7 +467,7 @@ display:
           label: ''
           exclude: true
           alter:
-            alter_text: true
+            alter_text: false
             text: "<div class=\"directory-img\"><a href=\"{{ view_node_2 }}?mail_to={{ field_dir_email_address }}\">{{ field_dir_picture }}</a></div>\r\n"
             make_link: false
             path: ''
@@ -508,14 +508,12 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_link: ''
+            image_link: content
             image_style: directory_listing
             svg_attributes:
               width: null
               height: null
             svg_render_as_image: true
-            image_loading:
-              attribute: lazy
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -654,7 +652,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"employee-wrapper\">\r\n{{ field_dir_picture }}\r\n<div class=\"directory-info\">\r\n<div class=\"directory-name\">{{ title }}</div>\r\n{{ field_dir_professional_title }}\r\n{{ field_dir_phone }}\r\n{{ view_node }}\r\n</div>\r\n{{ view_node_1 }}\r\n</div>"
+            text: "<div class=\"employee-wrapper\">\r\n{{ field_dir_picture }}\r\n<div class=\"directory-info\">\r\n<div class=\"directory-name\">{{ title }}</div>\r\n{{ field_dir_professional_title }}\r\n{{ field_dir_phone }}\r\n{# {{ view_node }} #}\r\n</div>\r\n{# {{ view_node_1 }} #}\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -809,7 +807,7 @@ display:
               field: field_entry_type
               rendered: true
               rendered_strip: false
-          row_class: 'col-12 col-md-6'
+          row_class: 'col-12 col-md-6 col-lg-4 col-xl-3'
           default_row_class: true
       row:
         type: fields
