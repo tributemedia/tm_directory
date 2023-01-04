@@ -26,4 +26,4 @@ dependencies:
   - 'simple_sitemap:simple_sitemap'
   - 'svg_image:svg_image'
   - 'webform:webform'
-version: 1.0.0-beta1
+version: 1.0.0-beta2
