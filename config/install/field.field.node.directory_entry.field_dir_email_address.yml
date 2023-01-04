@@ -12,7 +12,7 @@ entity_type: node
 bundle: directory_entry
 label: 'Email Address'
 description: 'This email address will be used in the contact form for sending messages to this person.'
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
