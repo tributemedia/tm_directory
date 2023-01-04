@@ -20,4 +20,5 @@ For advanced option, you'll need to include the "Email Me" functionality by doin
 7. Enable "Override the output of this field with custom text" under "Rewrite results"
 8. Select the Custom text field.
 9. In the text field, remove the twig comment characters around the {{ view_node }} and {{ view_node_1 }} lines.
-
+10. Edit Directory Entry content type. Select the manage fields tab.
+11. Edit the Email field and check the "Required" box to require an email address entry.
