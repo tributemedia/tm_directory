@@ -2,3 +2,5 @@ tm-directory:
   css:
     theme:
       css/directory.css: {}
+  js:
+    js/directory.js: {}
