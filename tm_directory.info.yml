@@ -1,6 +1,6 @@
 name: 'Member Directory'
 type: module
-core_version_requirement: '^8.9 || ^9'
+core_version_requirement: '^8.9 || ^9 || ^10'
 description: 'Provides Directory Entry content type and related configuration. Directory Entries are used to add new people to your directory. A new Directory Entry will be automatically added to your directory page and sorted based on your site''s configuration.'
 dependencies:
   - 'adv_block_class:adv_block_class'
